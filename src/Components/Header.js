@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import "../Styles/Components/_App.scss";
 import { useState } from "react";
+import logo from "../assets/shared/logo.svg";
+import menuOpen from "../assets/shared/icon-hamburger.svg";
+import close from "../assets/shared/icon-close.svg";
 
 function Header({ currentRoute }) {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <header className="header">
       <div className="left-header">
-        <img src="/starter-code/assets/shared/logo.svg" alt="" />
+        <img src={logo} alt="" />
         <hr />
       </div>
       <div className="right-header">
@@ -69,16 +72,16 @@ function Header({ currentRoute }) {
         <img
           onClick={() => setShowMenu(!showMenu)}
           className="open"
-          src="/starter-code/assets/shared/icon-hamburger.svg"
-          alt=""
+          src={menuOpen}
+          alt="burger-menu"
         />
         {showMenu ? (
           <div className="hamburger">
             <img
               onClick={() => setShowMenu(false)}
               className="close"
-              src="/starter-code/assets/shared/icon-close.svg"
-              alt=""
+              src={close}
+              alt="close-icon"
             />
             <ul>
               <li>
