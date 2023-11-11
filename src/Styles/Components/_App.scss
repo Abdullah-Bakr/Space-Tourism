@@ -1,0 +1,100 @@
+@use "../Abstracts/Variables.scss" as *;
+@use "../Abstracts/mixin.scss" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .left-header {
+    width: 40%;
+    img {
+      padding: 20px;
+      margin: 20px;
+    }
+    hr {
+      width: 30%;
+      position: absolute;
+      top: 44%;
+      right: 58%;
+      z-index: 5;
+      opacity: 0.4;
+    }
+  }
+  .right-header {
+    width: 60%;
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding-right: 100px;
+        background-color: rgba(72, 86, 101, 0.377);
+        padding: 0px 10px;
+        backdrop-filter: blur(10px);
+        li {
+          display: inline-block;
+          position: relative;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 40px 0;
+
+          cursor: pointer;
+          a {
+            padding: 40px 0;
+            font-size: 1.5vw;
+            font-weight: 100;
+            font-family: "Barlow Condensed", sans-serif;
+
+            strong {
+              font-size: 1.5vw;
+              // font-size: 16px;
+              font-weight: 700;
+              margin-right: 5px;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: transparent;
+            transition: background-color 0.3s;
+          }
+
+          &:hover::before {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.glide__bullet--active {
+  border-bottom: 2px solid white !important;
+}
+@media (max-width: 768px) {
+  ul li a {
+    font-size: 2vw !important;
+  }
+  ul li a strong {
+    display: none;
+  }
+}
