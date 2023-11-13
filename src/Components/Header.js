@@ -7,6 +7,7 @@ import close from "../assets/shared/icon-close.svg";
 
 function Header({ currentRoute }) {
   const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="header">
       <div className="left-header">
@@ -76,7 +77,7 @@ function Header({ currentRoute }) {
           alt="burger-menu"
         />
         {showMenu ? (
-          <div className="hamburger">
+          <div className={`hamburger ${showMenu ? "opening" : ""}`}>
             <img
               onClick={() => setShowMenu(false)}
               className="close"
