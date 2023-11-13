@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Space-Tourism/static/css/main.9a5da286.css",
-    "main.js": "/Space-Tourism/static/js/main.006c990d.js",
+    "main.css": "/Space-Tourism/static/css/main.622ffe35.css",
+    "main.js": "/Space-Tourism/static/js/main.e8a0cc75.js",
     "static/media/image-victor-glover.png": "/Space-Tourism/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/Space-Tourism/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/Space-Tourism/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -27,11 +27,14 @@
     "static/media/image-launch-vehicle-landscape.jpg": "/Space-Tourism/static/media/image-launch-vehicle-landscape.4281a59ff7186488fe6a.jpg",
     "static/media/background-destination-mobile.jpg": "/Space-Tourism/static/media/background-destination-mobile.e0131e27e751ead1a922.jpg",
     "index.html": "/Space-Tourism/index.html",
-    "main.9a5da286.css.map": "/Space-Tourism/static/css/main.9a5da286.css.map",
-    "main.006c990d.js.map": "/Space-Tourism/static/js/main.006c990d.js.map"
+    "static/media/logo.svg": "/Space-Tourism/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
+    "static/media/icon-close.svg": "/Space-Tourism/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
+    "static/media/icon-hamburger.svg": "/Space-Tourism/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
+    "main.622ffe35.css.map": "/Space-Tourism/static/css/main.622ffe35.css.map",
+    "main.e8a0cc75.js.map": "/Space-Tourism/static/js/main.e8a0cc75.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a5da286.css",
-    "static/js/main.006c990d.js"
+    "static/css/main.622ffe35.css",
+    "static/js/main.e8a0cc75.js"
   ]
 }
